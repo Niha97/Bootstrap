@@ -35,12 +35,17 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-8">
+                <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col col-sm">
+                <div class="col-12 col-sm-3">
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-3">
+                <form action="#reserve" method="get">
+                    <button type="submit" value="go" class="btn btn-warning btn-block ">Reserve Table</button>
+                </form>
                 </div>
             </div>
         </div>
@@ -65,10 +70,26 @@
             </div>
         </div>
 
+        <div class="row row-content align-items-center">
+            <div class="col-sm-4 col-md-3 flex-first ">
+                <h3>This Month's Promotions</h3>
+            </div>
+            <div class="col-sm col-md flex-last">
+            <div class="media">
+                
+                <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p class="hidden-xs-down">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entries anf five choices desserts. Free flowing bubbly soft drinks. All for just $19.99 per person.</p>
+                    </div>
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" >
+            </div>
+            </div>
+        </div>
+
 
         <div class="row row-content align-items-center">
-            <div class="col-sm-4  col-md-3 flex-first ">
-                <h3>This Month's Promotions</h3>
+            <div class="col-sm-4  col-md-3 push-col-sm-4">
+                <h3>Meet our culinary specialist</h3>
             </div >
             <div class="col-sm  col-md flex-first">
                  <div class="media">
@@ -87,16 +108,79 @@
             </div>
         </div>
 
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4  col-md-3 flex-first ">
-                <h3>Meet our Culinary Specialists</h3>
+        <div class="row row-content align-items-center" id="reserve">
+            <div class="col-12 col-sm-8 offset-sm-2">
+                
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white">Reserve a table</h3>
+                    <div calss="card-body ">
+                            <dl class="row card-block">
+                                <dt class="col-12 col-sm-2 flex-first">Number of guests</dt>
+                                <dd class="col-12 col-sm-9 flex-first">
+                                    <form >
+                                         <div class="form-group row">
+                                            <div class="col-2 col-sm-2">
+                                            <input type="radio" id="1" value="1" >
+                                                    <label for="1">1</label>
+                                            </div>
+                                            <div class="col-2 col-sm-2">
+                                            <input type="radio" id="2" value="2">
+                                                    <label for="2">2</label>
+                                            </div>
+                                            <div class="col-2 col-sm-2">
+                                            <input type="radio" id="3" value="3">
+                                                    <label for="3">3</label>
+                                            </div>
+                                                <div class="col-2 col-sm-2">
+                                            <input type="radio" id="4" value="4">
+                                                    <label for="4">4</label>
+                                                </div>
+                                                <div class="col-2 col-sm-2">
+                                            <input type="radio" id="5" value="5">
+                                                    <label for="1">5</label>
+                                                </div>
+                                                <div class="col-2 col-sm-2">
+                                            <input type="radio" id="6" value="6">
+                                                    <label for="6">6</label>
+                                                </div>
+                                            
+                                         </div>
+                                    </form>
+                                </dd>
+                                <dt class="col-12 col-sm-2 flex-first">Date and Time</dt>
+                                <dd class="col-10">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <div class="input-group">
+                                                <div class="input-group-addon"><i class="fa fa-calendar fa-sm"></i></div>
+                                                     <input type="text" placeholder=" Date">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <div class="input-group">
+                                                <div class="input-group-addon"><i class="fa fa-clock-o"></i></div>
+                                                     <input type="text" placeholder="Time">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </dd>
+                                 <dt class="col-12 col-sm-4 offset-sm-2">
+                                     <button type="button" class="btn btn-primary btn-md">Reserve</button>
+                                 </dt>
+                            </dl>
+                          
+                           
+                           
+                    </div>
+                </div>
             </div>
-            <div class="col-sm  col-md flex-last ">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
-            </div>
+            
         </div>
+
+
+
+
+
     </div>
 
     <footer class="footer">
